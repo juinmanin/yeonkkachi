@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yeonkkachi – Ethical AI Trading Research Project. Transparent, autonomous, and open-source." />
+  <title>Yeonkkachi – AI Trading Research</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav class="navbar">
+      <a class="brand" href="#">🐦 Yeonkkachi</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#transparency">Transparency</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+        <li><a href="https://github.com/juinmanin/yeonkkachi" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Yeonkkachi</h1>
+      <p class="tagline">Ethical AI-Powered Trading Research</p>
+      <p class="sub">An open-source, fully transparent autonomous trading bot built for research — not profit maximisation.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://github.com/juinmanin/yeonkkachi" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn btn-secondary" href="#about">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About the Project</h2>
+      <p>
+        Yeonkkachi (연까치, Korean for <em>magpie</em>) is an autonomous AI trading research project that combines
+        market analysis, risk management, and social-media transparency into a single open-source system.
+        Every trade decision is logged and announced publicly, making the project fully auditable.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MISSION ===== -->
+  <section id="mission" class="section alt">
+    <div class="container">
+      <h2>Mission Statement</h2>
+      <blockquote>
+        "To advance ethical, transparent, and auditable AI in financial markets — empowering researchers and the public
+        to understand, critique, and improve autonomous decision-making systems."
+      </blockquote>
+      <ul class="mission-list">
+        <li>🔍 <strong>Radical transparency</strong> – every trade is logged and tweeted in real time.</li>
+        <li>🛡️ <strong>Risk-first design</strong> – hard limits on position size and drawdown.</li>
+        <li>🧪 <strong>Research-grade</strong> – paper-trading mode by default; live trading requires deliberate opt-in.</li>
+        <li>🌐 <strong>Open source</strong> – all code is public under an open licence.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-icon">🤖</span>
+          <h3>AI Signal Generation</h3>
+          <p>Pluggable strategy modules evaluate technical indicators and generate BUY / SELL / HOLD signals.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">⚖️</span>
+          <h3>Risk Management</h3>
+          <p>Configurable max position size and drawdown limits are enforced before every trade.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">🐦</span>
+          <h3>Twitter Transparency</h3>
+          <p>Every trade is announced via the Twitter / X API so the public can follow along in real time.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">📊</span>
+          <h3>Trade Logging</h3>
+          <p>Structured JSON-lines trade log makes it easy to analyse performance and audit decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRANSPARENCY ===== -->
+  <section id="transparency" class="section alt">
+    <div class="container">
+      <h2>Public Transparency</h2>
+      <p>
+        All trades are published to our Twitter/X feed the moment they occur. You can also browse the
+        full trade history in <a href="https://github.com/juinmanin/yeonkkachi/tree/main/data" target="_blank" rel="noopener">data/</a>
+        on GitHub.
+      </p>
+      <div id="tweet-feed" class="tweet-feed">
+        <p class="loading">Loading recent activity…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DISCLAIMER ===== -->
+  <section id="disclaimer" class="section disclaimer">
+    <div class="container">
+      <h2>⚠️ Disclaimer</h2>
+      <p>
+        Yeonkkachi is a <strong>research and educational project only</strong>.
+        Nothing on this site or in this repository constitutes financial advice.
+        Trading involves significant risk of loss.  By using this software you agree to the
+        <a href="docs/TERMS_OF_SERVICE.md">Terms of Service</a> and
+        <a href="docs/PRIVACY_POLICY.md">Privacy Policy</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2024 Yeonkkachi Project · <a href="docs/PRIVACY_POLICY.md">Privacy Policy</a> · <a href="docs/TERMS_OF_SERVICE.md">Terms of Service</a> · <a href="https://github.com/juinmanin/yeonkkachi" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
